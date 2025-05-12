@@ -1,0 +1,137 @@
+<html lang="pt-BR"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite de Aniversário</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            background-color: #ffffff;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 2s ease-out;
+        }
+
+        h1 {
+            color: #ff6347;
+            font-size: 3em;
+            margin-bottom: 10px;
+            animation: bounceIn 1.5s ease-in-out;
+        }
+
+        p {
+            color: #333;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            animation: fadeInText 3s ease-out;
+        }
+
+        .date-time {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #4caf50;
+            font-weight: bold;
+        }
+
+        .button {
+            background-color: #ff6347;
+            color: #fff;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1em;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+            animation: slideInUp 1s ease-out;
+        }
+
+        .button:hover {
+            background-color: #ff4500;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes bounceIn {
+            0% { transform: scale(0); opacity: 0; }
+            60% { transform: scale(1.2); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        @keyframes fadeInText {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideInUp {
+            0% { transform: translateY(50px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .birthday-image {
+            width: 150px;
+            height: auto;
+            animation: pulseImage 2s infinite;
+            display: block;
+            margin: 0 auto;
+        }
+
+        @keyframes pulseImage {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Convite de Aniversário!</h1>
+        
+        <!-- Container para a imagem -->
+        <div class="image-container">
+            <img class="birthday-image" src="https://i.imgur.com/vgWX4jR.jpg" alt="Bonequinho de meia">
+        </div>
+
+        <p>Oi, pessoal, Antonio falando! (na verdade digitando) </p>
+        <p>Eu estou super empolgado para comemorar meu <strong>13º aniversário</strong> eu adoraria ter a presença de todos para tornar esse dia ainda mais especial. 😄</p>
+        <div class="date-time">
+            <p><strong>Data:</strong> 25/05/2025 (domingo)</p>
+            <p><strong>Horário:</strong> A partir das 16h</p>
+            <p><strong>Local:</strong> Rua rio velho 980 paranaguamirim</p>
+        </div>
+        <!-- Link para WhatsApp com a mensagem de confirmação -->
+        <a href="https://wa.me/47999111018?text=Oi%20Tonho%2C%20confirmo%20minha%20presença%20na%20festa!" target="_blank">
+            <button class="button">Confirmar Presença</button>
+        </a>
+    </div>
+
+
+</body></html>
